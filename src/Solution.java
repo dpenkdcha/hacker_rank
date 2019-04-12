@@ -1,61 +1,13 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Solution {
-
-    // Complete the gameOfStones function below.
-    static String gameOfStones(int n) {
-    	int a = n;
-    	String s = "";
-    	
-    	
-    	if(n-2 == 2) {
-    		s = "Second";
-    		n = n-2;
-    	} else if(n-2 == 3) {
-    		s = "Second";
-    		n = n-3;
-    	} else if(n-2 == 5) {
-    		s = "Second";
-    		n = n-5;
-    	}  else {
-    		
-    	}
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	return s;
-    }
-
-    private static final Scanner scanner = new Scanner(System.in);
-
-    public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
-        int t = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
-        for (int tItr = 0; tItr < t; tItr++) {
-            int n = scanner.nextInt();
-            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
-            String result = gameOfStones(n);
-
-            bufferedWriter.write(result);
-            bufferedWriter.newLine();
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        for(int a0 = 0; a0 < t; a0++){
+        	
         }
+	}
 
-        bufferedWriter.close();
-
-        scanner.close();
-    }
 }
