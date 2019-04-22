@@ -31,12 +31,8 @@ public class AddDays {
 	        System.out.println(datearr[0] + " " + datearr[1] + " " + datearr[2]);
 	        
 	        int yearsToAdd = 0;
-	        int monthsToAdd = 0;
-	        int daysToAdd = 0;
 	        int extraDays = 0;
 	        int finalYear = Integer.parseInt(datearr[2]);;
-	        int finalMonth = 0;
-	        int finalDay = 0;
 	        int year = Integer.parseInt(datearr[2]);
 	        int month = Integer.parseInt(datearr[1]);
 	        int day = Integer.parseInt(datearr[0]);
@@ -63,10 +59,10 @@ public class AddDays {
             System.out.println("Current Month: " + Integer.parseInt(datearr[1]));
         
             
-            extraDays = day + extraDays;
-            for(int i=1; (i<12 && extraDays >= hm.get(month)); i++) {
-        		extraDays = extraDays - hm.get(month);
-        		System.out.println("Days in month " + month + " : " + hm.get(month) + " Remaining Days " + extraDays);
+            day = day + extraDays;
+            for(int i=1; day >= hm.get(month); i++) {
+            	day = day - hm.get(month);
+        		System.out.println("Days in month " + month + " : " + hm.get(month) + " Remaining Days " + day);
         		if(month < 12) {
         			month++;
         		} else {
@@ -77,10 +73,9 @@ public class AddDays {
             }
             System.out.println("Calculated Month :" + month);
             
-            finalDay = extraDays;
-            System.out.println("Calculated Day :" + finalDay);
+            System.out.println("Calculated Day :" + day);
             
-            String finalDate = finalDay+""+month+""+finalYear;
+            String finalDate = day+""+month+""+finalYear;
             System.out.println("Calculated Date :" + finalDate);
 	            
 	        
