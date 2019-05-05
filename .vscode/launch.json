@@ -1,0 +1,81 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program12",
+            "request": "launch",
+            "mainClass": "Program12",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program11",
+            "request": "launch",
+            "mainClass": "Program11",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program10",
+            "request": "launch",
+            "mainClass": "Program10",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program9",
+            "request": "launch",
+            "mainClass": "Program9",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program8",
+            "request": "launch",
+            "mainClass": "Program8",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - program7",
+            "request": "launch",
+            "mainClass": "program7",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program6",
+            "request": "launch",
+            "mainClass": "Program6",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program5",
+            "request": "launch",
+            "mainClass": "Program5",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program1",
+            "request": "launch",
+            "mainClass": "Program1",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program4",
+            "request": "launch",
+            "mainClass": "Program4",
+            "projectName": "HackerRank"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program3",
+            "request": "launch",
+            "mainClass": "Program3",
+            "projectName": "HackerRank"
+        }
+    ]
+}
