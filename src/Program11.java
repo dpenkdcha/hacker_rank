@@ -3,7 +3,7 @@ class Program11 {
         System.out.println("Hello");
 
         int m = 1;
-        int a[] = new int[]{1, 1, 1, 1, 1, 0, 0, 1, 1, 1};
+        int a[] = new int[]{1, 1, 0, 1, 1, 1, 0, 1, 1, 1};
         int wr=0, wl=0, li=0, w = 0, zc=0;
         while(wr < a.length) {
             System.out.println("1 wr : " + wr + " wl : " + wl + " li : " + li + " w : " + w + " zc : " + zc);

@@ -2,7 +2,7 @@ class Program9 {
     public static void main(String[] args) {
         System.out.println("Hello");
 
-        int[] a = {100, 180, 260, 310, 40, 30, 535, 695, 345, 55, 33, 310, 975, 456, 45, 5};
+        int[] a = {100, 180, 260, 310, 40, 30, 535, 695, 345, 55, 33, 310, 975, 45, 5, 4,6};
         int buy;
         int sell = 0;
         for(int i=0;i<a.length-1;i++) {
@@ -18,7 +18,7 @@ class Program9 {
                     } else if( k == a.length-2) {
                         sell = a[k+1];
                         i = k+1;
-                        System.out.println("Sell at : " + sell + " on day : " + i);
+                        System.out.println("else Sell at : " + sell + " on day : " + i);
                     }
                 }
             }

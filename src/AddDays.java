@@ -60,7 +60,7 @@ public class AddDays {
         
             
             day = day + extraDays;
-            for(int i=1; day >= hm.get(month); i++) {
+            while(day >= hm.get(month)) {
             	day = day - hm.get(month);
         		System.out.println("Days in month " + month + " : " + hm.get(month) + " Remaining Days " + day);
         		if(month < 12) {
