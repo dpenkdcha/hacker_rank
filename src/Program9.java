@@ -2,7 +2,7 @@ class Program9 {
     public static void main(String[] args) {
         System.out.println("Hello");
 
-        int[] a = {100, 180, 260, 310, 40, 30, 535, 695, 345, 55, 33, 310, 975, 45, 5, 4,6};
+        int[] a = {200, 180, 260, 310, 40, 30, 535, 695, 345, 55, 33, 310, 975, 45, 5, 3,6};
         int buy;
         int sell = 0;
         for(int i=0;i<a.length-1;i++) {

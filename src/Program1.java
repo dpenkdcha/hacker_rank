@@ -5,13 +5,14 @@ public class Program1 {
 
 	public static void main(String[] args) {
 		System.out.println("Hello");
-		String s = "abcccdcdcdcdb";
+		String s = "abcecbcdcdcdcdb";
 		String s1 = "abaedacebdbafbceccaebeea";
 		String str1 = "hi hello how hello hey hi hello";
 		String str2 = "hello";
 		String str3 = "bye";
 		char c;
 		String d;
+		int arr[] = {10, 5, 3, 4, 5, 3, 6};
 		//char []c = new char[s.length()];
 		//HashMap<Integer, Character> c = new HashMap<>();
 		HashSet<Character> h = new HashSet<>();
@@ -45,5 +46,24 @@ public class Program1 {
 		String[] ss = str1.split(",");
 		System.out.println(Arrays.toString(ss));
 
+		
+		
+		int min = -1; 
+        HashSet<Integer> set = new HashSet<>(); 
+  
+        for (int i=0; i<=arr.length-1; i++) 
+        { 
+            if (set.contains(arr[i])) {
+            	min = i; 
+            	System.out.println("ele " + arr[min]); 
+            }
+            else  
+                set.add(arr[i]); 
+        } 
+  
+        if (min != -1) 
+          System.out.println("The first repeating element is " + arr[min]); 
+        else
+          System.out.println("There are no repeating elements");
 	}
 }
