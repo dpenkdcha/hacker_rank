@@ -28,9 +28,16 @@ public class jsonobjects {
 		
 		JSONObject financialGridresponse = new JSONObject("{\"RS\":{\"FR_RESP\":\"\\\"IN|FQ|FQ|_|_|E042;PR|FQ|FQ|_|_|E042\\\"\",\"AC\":\"4077011\",\"RESP\":\"S\",\"POLICY_NO\":\"U99013418\"}}");
 		String s3 = financialGridresponse.optJSONObject("RS").optString("FR_RESP");
-		System.out.println("S3" + s3);
 		
+		System.out.println(s3);
 		
+		JSONObject j1 = new JSONObject();
+		j1.put("key1", "value1");
+		j1.put("key2", "value1");
+		System.out.println(j1.toString());
+		j1.put("key1", "value2");
+		j1.put("key2", "value");
+		System.out.println(j1.toString());
 	}
 	
 }

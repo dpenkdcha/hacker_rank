@@ -1,5 +1,7 @@
 import java.util.regex.Pattern;
 
+import org.json.JSONObject;
+
 public class Temp {
 
 	public static void main(String[] args) {
@@ -12,6 +14,10 @@ public class Temp {
         String regexResult = str.replaceFirst("\\w[&]", "Y");
          
         System.out.println(newStr);
-        System.out.println(regexResult);
+        System.out.println(regexResult);    
+        
+        System.out.println(str.substring(2));
+        
+        
 	}
 }
