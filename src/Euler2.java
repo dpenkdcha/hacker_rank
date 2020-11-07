@@ -1,8 +1,6 @@
-import java.io.*;
+
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+
 
 public class Euler2 {
 
@@ -27,6 +25,7 @@ public class Euler2 {
                 c=n;
             }
             System.out.println(sum); 
+            in.close();
         }
     }
 }
