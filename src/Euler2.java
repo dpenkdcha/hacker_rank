@@ -25,8 +25,8 @@ public class Euler2 {
                 c=n;
             }
             System.out.println(sum); 
-            in.close();
         }
+        in.close();
     }
 }
 

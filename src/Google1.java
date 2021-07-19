@@ -100,5 +100,6 @@ public class Google1 {
 		     }
 			System.out.println("Case #" + k  + ": " + M);
 		}
+		scanner.close();
 	}
 }

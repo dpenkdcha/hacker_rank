@@ -27,7 +27,7 @@ public class Euler1 {
 			C = ((newN15) * (30 + (newN15-1)*15))/2;
 			
 			System.out.println(A+B-C);
-			scanner.close();
 		}
+		scanner.close();
 	}
 }

@@ -33,5 +33,6 @@ public class Google2 {
 			A = read - B;
 			System.out.println("Case #" + k  + ": " + A + " " + B);
 		}
+		scanner.close();
 	}
 }

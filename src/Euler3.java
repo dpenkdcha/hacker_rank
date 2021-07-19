@@ -29,6 +29,7 @@ public class Euler3 {
             }
             System.out.println(A);
         }
+        in.close();
 	}
 
 }

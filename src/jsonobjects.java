@@ -12,19 +12,19 @@ public class jsonobjects {
 		boolean a = obj.optString("cn").contains("zxc");
 		System.out.println(a);
 		System.out.println(a);
-		String s1 = StringEscapeUtils.unescapeJava("{\"payment_enq_resp\":{\"transaction\":{\"IBLRefNo\":\"VK79DT0011511630\",\"CustomerRefNo\":\"210719051811711\",\"StatusCode\":\"E\",\"StatusDesc\":\"Success\",\"Amount\":\"1.00\",\"TranType\":\"IMPS\",\"PaymentDate\":\"21-07-2019 17:18\",\"IBL_customer_name\":\"M\\S LAXMI ANN BHANDA\",\"name_match_status\":\"MISMATCH\",\"policy_no\":\"C228328645\",\"IMPSRefNo\":\"920217488648\"}}}");
-		String s2 = "{\"payment_enq_resp\":{\"transaction\":{\"IBLRefNo\":\"VK79DT0011511630\",\"CustomerRefNo\":\"210719051811711\",\"StatusCode\":\"E\",\"StatusDesc\":\"Success\",\"Amount\":\"1.00\",\"TranType\":\"IMPS\",\"PaymentDate\":\"21-07-2019 17:18\",\"IBL_customer_name\":\"M\\S LAXMI ANN BHANDA\",\"name_match_status\":\"MISMATCH\",\"policy_no\":\"C228328645\",\"IMPSRefNo\":\"920217488648\"}}}";
-		//String s1 = StringEscapeUtils.unescapeJava("{\"payment_enq_resp\":{\"transaction\":{\"IBLRefNo\":\"VK79DT0011511630\",\"CustomerRefNo\":\"210719051811711\",\"StatusCode\":\"E\",\"StatusDesc\":\"Success\",\"Amount\":\"1.00\",\"TranType\":\"IMPS\",\"PaymentDate\":\"\",\"IBL_customer_name\":\"M\\S LAXMI ANN BHANDA\",\"name_match_status\":\"MISMATCH\",\"policy_no\":\"C228328645\",\"IMPSRefNo\":\"920217488648\"}}}");
-	//	JSONObject obj2 = new JSONObject("{\"payment_enq_resp\":{\"transaction\":{\"IBLRefNo\":\"VK79DT0011511630\",\"CustomerRefNo\":\"210719051811711\",\"StatusCode\":\"E\",\"StatusDesc\":\"Success\",\"Amount\":\"1.00\",\"TranType\":\"IMPS\",\"PaymentDate\":\"\",\"IBL_customer_name\":\"M\\S LAXMI ANN BHANDA\",\"name_match_status\":\"MISMATCH\",\"policy_no\":\"C228328645\",\"IMPSRefNo\":\"920217488648\"}}}");
+		//String s1 = StringEscapeUtils.unescapeJava("{\"payment_enq_resp\":{\"transaction\":{\"IBLRefNo\":\"VK79DT0011511630\",\"CustomerRefNo\":\"210719051811711\",\"StatusCode\":\"E\",\"StatusDesc\":\"Success\",\"Amount\":\"1.00\",\"TranType\":\"IMPS\",\"PaymentDate\":\"21-07-2019 17:18\",\"IBL_customer_name\":\"M\\S LAXMI ANN BHANDA\",\"name_match_status\":\"MISMATCH\",\"policy_no\":\"C228328645\",\"IMPSRefNo\":\"920217488648\"}}}");
+		String s1 = StringEscapeUtils.unescapeJava("{\"payment_enq_resp\":{\"transaction\":{\"IBLRefNo\":\"S14020048404405\",\"CustomerRefNo\":\"\",\"StatusCode\":\"\",\"StatusDesc\":\"\",\"Amount\":\"\",\"TranType\":\"\",\"PaymentDate\":\"\",\"IBL_customer_name\":\"\",\"name_match_status\":\"\",\"policy_no\":\"C257247124\",\"IMPSRefNo\":\"\"}}}");
+		//String s2 = "{\"payment_enq_resp\":{\"transaction\":{\"IBLRefNo\":\"VK79DT0011511630\",\"CustomerRefNo\":\"210719051811711\",\"StatusCode\":\"E\",\"StatusDesc\":\"Success\",\"Amount\":\"1.00\",\"TranType\":\"IMPS\",\"PaymentDate\":\"21-07-2019 17:18\",\"IBL_customer_name\":\"M\\S LAXMI ANN BHANDA\",\"name_match_status\":\"MISMATCH\",\"policy_no\":\"C228328645\",\"IMPSRefNo\":\"920217488648\"}}}";
+		//JSONObject obj2 = new JSONObject("{\"payment_enq_resp\":{\"transaction\":{\"IBLRefNo\":\"S14020048404405\",\"CustomerRefNo\":\"\",\"StatusCode\":\"\",\"StatusDesc\":\"\",\"Amount\":\"\",\"TranType\":\"\",\"PaymentDate\":\"\",\"IBL_customer_name\":\"\",\"name_match_status\":\"\",\"policy_no\":\"C257247124\",\"IMPSRefNo\":\"\"}}}","neftStatusResponse":{"TranType":"","name_match_status":"","StatusDesc":"","policy_no":"C257247124","IBL_customer_name":"","IBLRefNo":"S14020048404405","PaymentDate":"","Amount":"","IMPSRefNo":"","CustomerRefNo":"","StatusCode":"");
 		System.out.println(s1);
-		System.out.println("S2" + s2);
-		//JSONObject obj4 = new JSONObject(s1);
+		//System.out.println("S2" + s2);
+		JSONObject obj4 = new JSONObject(s1);
 		//JSONObject obj5 = new JSONObject(s2);
 	
 		//JSONObject obj3 = obj2.optJSONObject("payment_enq_resp").optJSONObject("transaction");
 		
 		//System.out.println(obj3);
-		//System.out.println(obj4.optJSONObject("payment_enq_resp").optJSONObject("transaction"));
+		System.out.println("obj4"+obj4.optJSONObject("payment_enq_resp").optJSONObject("transaction").optString("StatusDesc"));
 		//System.out.println("obj5" + obj5.optJSONObject("payment_enq_resp").optJSONObject("transaction"));
 		
 		JSONObject financialGridresponse = new JSONObject("{\"RS\":{\"FR_RESP\":null,\"AC\":\"4077011\",\"RESP\":\"S\",\"POLICY_NO\":\"U99013418\"}}");
@@ -69,6 +69,13 @@ public class jsonobjects {
 		System.out.println(j2.isNull("id"));
 		System.out.println(j2.has("id"));
 		System.out.println((j2.optJSONObject(("id")).isNull("id")));
+		
+		JSONObject j4 = new JSONObject();
+		String t3 = "";
+		j4.put("ok", t3);
+		j4.put("ok1", "ok1");
+		System.out.println(j4.toString());
+		System.out.println(j4.has("ok"));
 		
 		
 	}
